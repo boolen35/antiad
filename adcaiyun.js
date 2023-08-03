@@ -8,34 +8,34 @@ hostname = *.cyapi.cn, adx.sogaha.cn
 *************************************/
 
 
-var chxm1023 = JSON.parse($response.body);
+var boolen35 = JSON.parse($response.body);
 const vip = '/vip_info';
 const adhf = '/activity';
 const user = '(user|visitors)';
 
 if ($request.url.indexOf(vip) != -1){
-    chxm1023.vip = {
+    boolen35.vip = {
     "expires_time" : "4092599349",
     "is_auto_renewal" : true
   };
-    chxm1023.svip = {
+    boolen35.svip = {
     "expires_time" : "4092599349",
     "is_auto_renewal" : true
   };
 }
 
 if ($request.url.indexOf(adhf) != -1){
-    chxm1023.activities = [];
+    boolen35.activities = [];
 }
 
 if ($request.url.indexOf('user') != -1){
-    chxm1023.result.ranking_above = 99;
-    chxm1023.result.is_vip = true;
-    chxm1023.result.vip_expired_at = 4092599349;
-    chxm1023.result.svip_given = 9999;
-    chxm1023.result.is_xy_vip = true;
-    chxm1023.result.xy_svip_expire = 4092599349; 
-    chxm1023.result.wt.vip = {
+    boolen35.result.ranking_above = 99;
+    boolen35.result.is_vip = true;
+    boolen35.result.vip_expired_at = 4092599349;
+    boolen35.result.svip_given = 9999;
+    boolen35.result.is_xy_vip = true;
+    boolen35.result.xy_svip_expire = 4092599349; 
+    boolen35.result.wt.vip = {
         "auto_renewal_type" : "",
         "expired_at" : 0,
         "enabled" : true,
@@ -44,16 +44,16 @@ if ($request.url.indexOf('user') != -1){
         "svip_expired_at" : 4092599349,
         "svip_auto_renewal_type" : ""
       };
-    chxm1023.result.wt.svip_given = 9999;
-    chxm1023.result.wt.ranking_above = 99;
-    chxm1023.result.is_phone_verified = true;
-    chxm1023.result.phone_num = "13145200000";
-    chxm1023.result.vip_take_effect = 1;
-    chxm1023.result.is_primary = true;
-    chxm1023.result.xy_vip_expire = 4092599349;
-    chxm1023.result.svip_expired_at = 4092599349;
-    chxm1023.result.svip_take_effect = 1;
-    chxm1023.result.vip_type = "s";
+    boolen35.result.wt.svip_given = 9999;
+    boolen35.result.wt.ranking_above = 99;
+    boolen35.result.is_phone_verified = true;
+    boolen35.result.phone_num = "13145200000";
+    boolen35.result.vip_take_effect = 1;
+    boolen35.result.is_primary = true;
+    boolen35.result.xy_vip_expire = 4092599349;
+    boolen35.result.svip_expired_at = 4092599349;
+    boolen35.result.svip_take_effect = 1;
+    boolen35.result.vip_type = "s";
 }
 
-$done({ body: JSON.stringify(chxm1023)});
+$done({ body: JSON.stringify(boolen35)});
