@@ -1,5 +1,5 @@
 [rewrite_local]
-^https?:\/\/(biz|wrapper)\.cyapi\.cn\/(.+\/(user.+|visitors|activity)|p\/v\d\/vip_info) url script-response-body https://raw.githubusercontent.com/chxm1023/Rewrite/main/caiyuntianqi.js
+^https?:\/\/(biz|wrapper)\.cyapi\.cn\/(.+\/(user.+|visitors|activity)|p\/v\d\/vip_info) url script-response-body https://raw.githubusercontent.com/boolen35/antiad/main/adcaiyun.js
 ^http:\/\/adx\.sogaha\.cn\/sdk\/ad\/get url reject-200
 
 [mitm]
